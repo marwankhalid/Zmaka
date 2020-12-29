@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		235EA805259AFF4F00DD5EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235EA803259AFF4F00DD5EC8 /* Main.storyboard */; };
 		235EA807259AFF5200DD5EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235EA806259AFF5200DD5EC8 /* Assets.xcassets */; };
 		235EA80A259AFF5200DD5EC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235EA808259AFF5200DD5EC8 /* LaunchScreen.storyboard */; };
+		235EA813259B3FE300DD5EC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 235EA812259B3FE300DD5EC8 /* GoogleService-Info.plist */; };
+		2CAF9727AE904FCBB37EF6C5 /* Pods_Zmaka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78EE38879DD3BDEE45596DA /* Pods_Zmaka.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		235EA806259AFF5200DD5EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		235EA809259AFF5200DD5EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		235EA80B259AFF5200DD5EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235EA812259B3FE300DD5EC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5DCD42CAA6C24CE3D15B175D /* Pods-Zmaka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zmaka.release.xcconfig"; path = "Target Support Files/Pods-Zmaka/Pods-Zmaka.release.xcconfig"; sourceTree = "<group>"; };
+		B78EE38879DD3BDEE45596DA /* Pods_Zmaka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zmaka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE38653CA0280BAD48938BBA /* Pods-Zmaka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zmaka.debug.xcconfig"; path = "Target Support Files/Pods-Zmaka/Pods-Zmaka.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAF9727AE904FCBB37EF6C5 /* Pods_Zmaka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1378033E73DFEC11DF58189D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE38653CA0280BAD48938BBA /* Pods-Zmaka.debug.xcconfig */,
+				5DCD42CAA6C24CE3D15B175D /* Pods-Zmaka.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		235EA7F1259AFF4F00DD5EC8 = {
 			isa = PBXGroup;
 			children = (
 				235EA7FC259AFF4F00DD5EC8 /* Zmaka */,
 				235EA7FB259AFF4F00DD5EC8 /* Products */,
+				1378033E73DFEC11DF58189D /* Pods */,
+				5B2CF6EFFA56785FF0524C78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +81,17 @@
 				235EA806259AFF5200DD5EC8 /* Assets.xcassets */,
 				235EA808259AFF5200DD5EC8 /* LaunchScreen.storyboard */,
 				235EA80B259AFF5200DD5EC8 /* Info.plist */,
+				235EA812259B3FE300DD5EC8 /* GoogleService-Info.plist */,
 			);
 			path = Zmaka;
+			sourceTree = "<group>";
+		};
+		5B2CF6EFFA56785FF0524C78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B78EE38879DD3BDEE45596DA /* Pods_Zmaka.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 235EA80E259AFF5200DD5EC8 /* Build configuration list for PBXNativeTarget "Zmaka" */;
 			buildPhases = (
+				F9A425595F779E62D747E010 /* [CP] Check Pods Manifest.lock */,
 				235EA7F6259AFF4F00DD5EC8 /* Sources */,
 				235EA7F7259AFF4F00DD5EC8 /* Frameworks */,
 				235EA7F8259AFF4F00DD5EC8 /* Resources */,
+				31FC83F913607C4E38FE2129 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +154,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				235EA80A259AFF5200DD5EC8 /* LaunchScreen.storyboard in Resources */,
+				235EA813259B3FE300DD5EC8 /* GoogleService-Info.plist in Resources */,
 				235EA807259AFF5200DD5EC8 /* Assets.xcassets in Resources */,
 				235EA805259AFF4F00DD5EC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31FC83F913607C4E38FE2129 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zmaka/Pods-Zmaka-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zmaka/Pods-Zmaka-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zmaka/Pods-Zmaka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A425595F779E62D747E010 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zmaka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		235EA7F6259AFF4F00DD5EC8 /* Sources */ = {
@@ -283,6 +355,7 @@
 		};
 		235EA80F259AFF5200DD5EC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE38653CA0280BAD48938BBA /* Pods-Zmaka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +369,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = marwankhalid.Zmaka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		235EA810259AFF5200DD5EC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DCD42CAA6C24CE3D15B175D /* Pods-Zmaka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = marwankhalid.Zmaka;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
