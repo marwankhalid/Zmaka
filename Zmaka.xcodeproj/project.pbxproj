@@ -7,26 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2306854B259C972000A94891 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2306854A259C972000A94891 /* SignUpVC.swift */; };
+		2306854F259C974700A94891 /* OnBoardingSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2306854E259C974700A94891 /* OnBoardingSignUpVC.swift */; };
 		235EA7FE259AFF4F00DD5EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235EA7FD259AFF4F00DD5EC8 /* AppDelegate.swift */; };
 		235EA800259AFF4F00DD5EC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235EA7FF259AFF4F00DD5EC8 /* SceneDelegate.swift */; };
-		235EA802259AFF4F00DD5EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235EA801259AFF4F00DD5EC8 /* ViewController.swift */; };
+		235EA802259AFF4F00DD5EC8 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235EA801259AFF4F00DD5EC8 /* SignInVC.swift */; };
 		235EA805259AFF4F00DD5EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235EA803259AFF4F00DD5EC8 /* Main.storyboard */; };
 		235EA807259AFF5200DD5EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235EA806259AFF5200DD5EC8 /* Assets.xcassets */; };
 		235EA80A259AFF5200DD5EC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235EA808259AFF5200DD5EC8 /* LaunchScreen.storyboard */; };
 		235EA813259B3FE300DD5EC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 235EA812259B3FE300DD5EC8 /* GoogleService-Info.plist */; };
+		23A2492D259CCF3C00CB6792 /* RoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2492C259CCF3C00CB6792 /* RoundedRectButton.swift */; };
+		23A24931259CD1F300CB6792 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A24930259CD1F300CB6792 /* HomeVC.swift */; };
+		23A24934259CF2B500CB6792 /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A24933259CF2B500CB6792 /* HomeCollectionView.swift */; };
 		2CAF9727AE904FCBB37EF6C5 /* Pods_Zmaka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78EE38879DD3BDEE45596DA /* Pods_Zmaka.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2306854A259C972000A94891 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		2306854E259C974700A94891 /* OnBoardingSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSignUpVC.swift; sourceTree = "<group>"; };
 		235EA7FA259AFF4F00DD5EC8 /* Zmaka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zmaka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235EA7FD259AFF4F00DD5EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		235EA7FF259AFF4F00DD5EC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		235EA801259AFF4F00DD5EC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		235EA801259AFF4F00DD5EC8 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		235EA804259AFF4F00DD5EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		235EA806259AFF5200DD5EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		235EA809259AFF5200DD5EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		235EA80B259AFF5200DD5EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		235EA812259B3FE300DD5EC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		23A2492C259CCF3C00CB6792 /* RoundedRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButton.swift; sourceTree = "<group>"; };
+		23A24930259CD1F300CB6792 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		23A24933259CF2B500CB6792 /* HomeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView.swift; sourceTree = "<group>"; };
 		5DCD42CAA6C24CE3D15B175D /* Pods-Zmaka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zmaka.release.xcconfig"; path = "Target Support Files/Pods-Zmaka/Pods-Zmaka.release.xcconfig"; sourceTree = "<group>"; };
 		B78EE38879DD3BDEE45596DA /* Pods_Zmaka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zmaka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE38653CA0280BAD48938BBA /* Pods-Zmaka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zmaka.debug.xcconfig"; path = "Target Support Files/Pods-Zmaka/Pods-Zmaka.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +63,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		23068547259C96D600A94891 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				235EA801259AFF4F00DD5EC8 /* SignInVC.swift */,
+				2306854A259C972000A94891 /* SignUpVC.swift */,
+				2306854E259C974700A94891 /* OnBoardingSignUpVC.swift */,
+				23A24930259CD1F300CB6792 /* HomeVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		23068548259C96DE00A94891 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23068549259C96E400A94891 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		235EA7F1259AFF4F00DD5EC8 = {
 			isa = PBXGroup;
 			children = (
@@ -74,14 +109,18 @@
 		235EA7FC259AFF4F00DD5EC8 /* Zmaka */ = {
 			isa = PBXGroup;
 			children = (
+				23068549259C96E400A94891 /* Views */,
+				23068548259C96DE00A94891 /* Models */,
+				23068547259C96D600A94891 /* Controllers */,
 				235EA7FD259AFF4F00DD5EC8 /* AppDelegate.swift */,
 				235EA7FF259AFF4F00DD5EC8 /* SceneDelegate.swift */,
-				235EA801259AFF4F00DD5EC8 /* ViewController.swift */,
 				235EA803259AFF4F00DD5EC8 /* Main.storyboard */,
 				235EA806259AFF5200DD5EC8 /* Assets.xcassets */,
 				235EA808259AFF5200DD5EC8 /* LaunchScreen.storyboard */,
 				235EA80B259AFF5200DD5EC8 /* Info.plist */,
 				235EA812259B3FE300DD5EC8 /* GoogleService-Info.plist */,
+				23A2492C259CCF3C00CB6792 /* RoundedRectButton.swift */,
+				23A24933259CF2B500CB6792 /* HomeCollectionView.swift */,
 			);
 			path = Zmaka;
 			sourceTree = "<group>";
@@ -209,9 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				235EA802259AFF4F00DD5EC8 /* ViewController.swift in Sources */,
+				2306854B259C972000A94891 /* SignUpVC.swift in Sources */,
+				23A24931259CD1F300CB6792 /* HomeVC.swift in Sources */,
+				235EA802259AFF4F00DD5EC8 /* SignInVC.swift in Sources */,
+				23A24934259CF2B500CB6792 /* HomeCollectionView.swift in Sources */,
+				23A2492D259CCF3C00CB6792 /* RoundedRectButton.swift in Sources */,
 				235EA7FE259AFF4F00DD5EC8 /* AppDelegate.swift in Sources */,
 				235EA800259AFF4F00DD5EC8 /* SceneDelegate.swift in Sources */,
+				2306854F259C974700A94891 /* OnBoardingSignUpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
