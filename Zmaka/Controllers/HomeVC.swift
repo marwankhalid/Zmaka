@@ -23,13 +23,17 @@ class HomeVC:UIViewController{
     @IBOutlet var areaSizes: UIButton!
     @IBOutlet var locations: UIButton!
     @IBOutlet var types: UIButton!
-    var thisWidth:CGFloat = 0
     
+    @IBOutlet var scrollView: UIScrollView!
+    var thisWidth:CGFloat = 0
+    var previousOffsetState:CGFloat = 0
+    @IBOutlet var coverHeightConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setImageRound(buttonName: popular)
         thisWidth = CGFloat(self.view.frame.width)
+        scroll()
         
     }
 
@@ -51,6 +55,33 @@ class HomeVC:UIViewController{
         buttonName.layer.cornerRadius = buttonName.frame.size.height/2
         buttonName.clipsToBounds = true
     }
+    
+    func scroll() {
+        if scrollView.contentOffset.y > 200 {
+            coverHeightConstraint.constant = 0
+        }
+        let offsetDiff = previousOffsetState - scrollView.contentOffset.y
+        print("Current offset = \(scrollView.contentOffset.y)")
+        print("Previous offset = \(previousOffsetState)")
+        print("Offset difference = \(offsetDiff)")
+        previousOffsetState = scrollView.contentOffset.y
+        let newHeight = coverHeightConstraint.constant + offsetDiff
+        coverHeightConstraint.constant = newHeight
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > 200 {
+            coverHeightConstraint.constant = 0
+        }
+        let offsetDiff = previousOffsetState - scrollView.contentOffset.y
+        print("Current offset = \(scrollView.contentOffset.y)")
+        print("Previous offset = \(previousOffsetState)")
+        print("Offset difference = \(offsetDiff)")
+        previousOffsetState = scrollView.contentOffset.y
+        let newHeight = coverHeightConstraint.constant + offsetDiff
+        coverHeightConstraint.constant = newHeight
+    }
+    
 }
 extension HomeVC:UICollectionViewDataSource,UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,6 +95,5 @@ extension HomeVC:UICollectionViewDataSource,UICollectionViewDelegate{
         cell.marlaTitle.text = data[indexPath.row].subTitle
         
         return cell
-        
     }
 }

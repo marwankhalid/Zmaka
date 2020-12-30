@@ -601,7 +601,7 @@
                                 <rect key="frame" x="0.0" y="250" width="414" height="716"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPC-Qd-9tq">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse Properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uW-S3-cAu">
                                                 <rect key="frame" x="10" y="10" width="160" height="25"/>
@@ -726,7 +726,7 @@
                                                                 <constraint firstItem="qn5-l6-83B" firstAttribute="top" secondItem="URr-4K-eMY" secondAttribute="bottom" id="c3Z-sT-BuP"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
-                                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="customSize" width="128" height="60"/>
                                                         <connections>
                                                             <outlet property="marla" destination="URr-4K-eMY" id="p5z-q8-DOD"/>
@@ -755,7 +755,7 @@
                                             <constraint firstItem="o2j-1Q-ve3" firstAttribute="top" secondItem="sXR-7U-nnb" secondAttribute="bottom" constant="20" id="8Xe-MF-Xdd"/>
                                             <constraint firstItem="J48-I3-sBL" firstAttribute="top" secondItem="6sJ-fe-oRs" secondAttribute="bottom" id="AOV-Re-BGf"/>
                                             <constraint firstItem="6sJ-fe-oRs" firstAttribute="top" secondItem="8uW-S3-cAu" secondAttribute="bottom" constant="15" id="N6t-7W-CJ4"/>
-                                            <constraint firstAttribute="height" constant="800" id="Niw-cW-6ZM"/>
+                                            <constraint firstAttribute="height" constant="1200" id="Niw-cW-6ZM"/>
                                             <constraint firstAttribute="trailing" secondItem="o2j-1Q-ve3" secondAttribute="trailing" constant="10" id="T4h-nz-2My"/>
                                             <constraint firstItem="6UL-hS-ysE" firstAttribute="centerX" secondItem="VPC-Qd-9tq" secondAttribute="centerX" id="TAT-rQ-9TI"/>
                                             <constraint firstItem="J48-I3-sBL" firstAttribute="leading" secondItem="VPC-Qd-9tq" secondAttribute="leading" id="VQe-Xf-0bS"/>
@@ -776,6 +776,9 @@
                                     <constraint firstAttribute="trailing" secondItem="VPC-Qd-9tq" secondAttribute="trailing" id="OAI-jG-Lh7"/>
                                     <constraint firstItem="VPC-Qd-9tq" firstAttribute="top" secondItem="ZPO-0l-0lR" secondAttribute="top" id="mcF-vc-Yqn"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="8Wm-J4-wmt" id="5lQ-u6-S23"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TRi-7l-7KP"/>
@@ -796,9 +799,11 @@
                     <connections>
                         <outlet property="areaSizes" destination="2cC-Wy-xbC" id="RQk-gX-QWr"/>
                         <outlet property="collectView" destination="o2j-1Q-ve3" id="aaa-2W-QmP"/>
+                        <outlet property="coverHeightConstraint" destination="1re-sO-siq" id="uHu-Vy-HQP"/>
                         <outlet property="locations" destination="aUH-l3-1KT" id="fGO-3T-9zZ"/>
                         <outlet property="pageControl" destination="6UL-hS-ysE" id="9cO-z9-yij"/>
                         <outlet property="popular" destination="adE-cW-bsP" id="iHh-L5-D7Y"/>
+                        <outlet property="scrollView" destination="ZPO-0l-0lR" id="bdA-c3-Qce"/>
                         <outlet property="types" destination="I2w-B5-KX8" id="0El-sF-wLx"/>
                     </connections>
                 </viewController>
